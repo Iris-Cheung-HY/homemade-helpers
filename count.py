@@ -1,6 +1,15 @@
 def count(my_collection, target):
-    pass
+    if len(my_collection) == 0:
+        return None
     
+    count_num = 0
+
+    for num in my_collection:
+        if num == target:
+            count_num += 1
+    return count_num
+
+
 
 def test_count_empty_list():
     assert count([], 7) == None

@@ -1,6 +1,14 @@
 def min(my_collection):
-    pass
-    
+    if len(my_collection) == 0:
+        return None
+
+    smallest_num = my_collection[0]
+    for i in range(1, len(my_collection)):
+        if my_collection[i] < smallest_num:
+            smallest_num = i
+    return smallest_num
+
+
 
 def test_min_empty_list():
     assert min([]) == None

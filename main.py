@@ -4,10 +4,12 @@ from max import *
 from sum import *
 
 def main():
-    min_tests()
+    # min_tests()
     # max_tests()
-    # count_tests()
+    count_tests()
     # sum_tests()
 
 if __name__ == "__main__":
     main()
+
+
